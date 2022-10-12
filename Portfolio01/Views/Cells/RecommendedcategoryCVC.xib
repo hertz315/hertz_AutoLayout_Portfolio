@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumGothic-Bold.ttf">
+            <string>NanumGothicBold</string>
+        </array>
+        <array key="NanumGothic-Regular.ttf">
+            <string>NanumGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecommendedcategoryCVC" id="p8E-E0-is5" customClass="RecommendedcategoryCVC" customModule="Portfolio01">
+            <rect key="frame" x="0.0" y="0.0" width="178" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1Wo-uW-rmO">
+                <rect key="frame" x="0.0" y="0.0" width="178" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmT-bg-kvj">
+                        <rect key="frame" x="16" y="16" width="162" height="132"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IL5-GF-wUx">
+                                <rect key="frame" x="16" y="14" width="130" height="102"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="문의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlZ-rK-0A4">
+                                        <rect key="frame" x="0.0" y="0.0" width="21" height="14"/>
+                                        <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaK-29-djx">
+                                        <rect key="frame" x="0.0" y="24" width="122.66666666666667" height="53"/>
+                                        <string key="text">실크벽지 폭이 110 이면
+일반인가요? 아니면 광
+폭인가요?</string>
+                                        <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="kgN-hB-66J">
+                                        <rect key="frame" x="0.0" y="87" width="107.66666666666667" height="15"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mgZ-v0-Omm">
+                                                <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="15"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMO-Dt-Mb6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="15" id="orq-zT-MzN"/>
+                                                            <constraint firstAttribute="height" constant="15" id="tMZ-Zg-kM8"/>
+                                                        </constraints>
+                                                        <color key="tintColor">
+                                                            <string key="name">
+9.21.gray400</string>
+                                                        </color>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="" image="heart" catalog="system"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0l-FO-Yyi">
+                                                        <rect key="frame" x="19.999999999999996" y="0.0" width="33.666666666666657" height="15"/>
+                                                        <fontDescription key="fontDescription" name="NanumGothic" family="NanumGothic" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ly3-Fh-Q89">
+                                                <rect key="frame" x="60.666666666666671" y="0.0" width="47" height="15"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IP0-TK-Hp7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="15" id="Uqt-a2-ESl"/>
+                                                            <constraint firstAttribute="height" constant="15" id="XRn-Ke-Wwn"/>
+                                                        </constraints>
+                                                        <color key="tintColor">
+                                                            <string key="name">
+9.21.gray400</string>
+                                                        </color>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="" image="message" catalog="system"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2F-Sj-O0e">
+                                                        <rect key="frame" x="20" y="0.0" width="27" height="15"/>
+                                                        <fontDescription key="fontDescription" name="NanumGothic" family="NanumGothic" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor">
+                            <string key="name">
+9.20.lightgray100</string>
+                        </color>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IL5-GF-wUx" secondAttribute="trailing" constant="16" id="U4p-En-TpH"/>
+                            <constraint firstItem="IL5-GF-wUx" firstAttribute="leading" secondItem="xmT-bg-kvj" secondAttribute="leading" constant="16" id="aEe-TW-Nv5"/>
+                            <constraint firstItem="IL5-GF-wUx" firstAttribute="top" secondItem="xmT-bg-kvj" secondAttribute="top" constant="14" id="w6T-qu-gqI"/>
+                            <constraint firstAttribute="bottom" secondItem="IL5-GF-wUx" secondAttribute="bottom" constant="16" id="wpc-ph-ojs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="xmT-bg-kvj" secondAttribute="trailing" id="2Ry-6N-tzf"/>
+                    <constraint firstItem="xmT-bg-kvj" firstAttribute="top" secondItem="1Wo-uW-rmO" secondAttribute="top" constant="16" id="2yw-jG-xeo"/>
+                    <constraint firstItem="xmT-bg-kvj" firstAttribute="leading" secondItem="1Wo-uW-rmO" secondAttribute="leading" constant="16" id="GQr-Ik-uLk"/>
+                    <constraint firstAttribute="bottom" secondItem="xmT-bg-kvj" secondAttribute="bottom" constant="16" id="vhW-uN-dU3"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="356" height="306"/>
+            <connections>
+                <outlet property="bodyLabel" destination="EaK-29-djx" id="eOl-SH-42E"/>
+                <outlet property="categoryLabel" destination="SlZ-rK-0A4" id="UIz-Q1-x9S"/>
+                <outlet property="chatButton" destination="IP0-TK-Hp7" id="F2T-Rl-SKy"/>
+                <outlet property="chatLabel" destination="I2F-Sj-O0e" id="PYJ-QA-05E"/>
+                <outlet property="likeButton" destination="vMO-Dt-Mb6" id="e3Q-zE-DKv"/>
+                <outlet property="likeLabel" destination="a0l-FO-Yyi" id="l50-W8-jRu"/>
+            </connections>
+            <point key="canvasLocation" x="432.30769230769232" y="68.957345971563981"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="message" catalog="system" width="128" height="116"/>
+        <namedColor>
+            <string key="name">
+9.20.lightgray100</string>
+            <color red="0.85490196078431369" green="0.85882352941176465" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor>
+            <string key="name">
+9.21.gray400</string>
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

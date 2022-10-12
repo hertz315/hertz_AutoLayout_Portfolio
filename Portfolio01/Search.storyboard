@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="re8-ri-0To">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumGothic-Bold.ttf">
+            <string>NanumGothicBold</string>
+        </array>
+        <array key="NanumGothic-Regular.ttf">
+            <string>NanumGothic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--검색-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SearchVC" id="BYZ-38-t0r" customClass="SearchVC" customModule="Portfolio01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvp-1s-A3i">
+                                <rect key="frame" x="0.0" y="47" width="390" height="1153"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k2s-HI-d2w" userLabel="ContainerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1153"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="j86-bm-2Nd">
+                                                <rect key="frame" x="0.0" y="102" width="390" height="0.0"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" id="fpL-CS-4PV"/>
+                                                </constraints>
+                                                <color key="sectionIndexBackgroundColor">
+                                                    <string key="name">
+22.09.14-light-gray</string>
+                                                </color>
+                                            </tableView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이건 어떠세요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZN-uY-31d">
+                                                <rect key="frame" x="22" y="118" width="346" height="18.666666666666657"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="16"/>
+                                                <color key="textColor">
+                                                    <string key="name">
+22.09.14-black</string>
+                                                </color>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwE-FW-Q2h" userLabel="SearchStackView">
+                                                <rect key="frame" x="22" y="20" width="346" height="44"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="무엇을 찾으세요?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZaR-4D-3hV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="302" height="44"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                <color key="value">
+                                                                    <string key="name">
+22.09.14-gray300</string>
+                                                                </color>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9f-h4-9vT">
+                                                        <rect key="frame" x="302" y="0.0" width="44" height="44"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="Search"/>
+                                                        <connections>
+                                                            <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JUT-gg-s0H"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="NEX-cD-63g"/>
+                                                    <constraint firstItem="m9f-h4-9vT" firstAttribute="leading" secondItem="ZaR-4D-3hV" secondAttribute="trailing" id="dHJ-UK-XNR"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kGM-hX-zlv" userLabel="최근검색어">
+                                                <rect key="frame" x="22" y="72" width="346" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최근검색어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQQ-ZR-Wfb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="30"/>
+                                                        <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZT-ca-xVf">
+                                                        <rect key="frame" x="170" y="0.0" width="176" height="30"/>
+                                                        <fontDescription key="fontDescription" name="NanumGothic" family="NanumGothic" pointSize="12"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="모두지우기" image="Delete">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="allClearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qRd-vh-MkK"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="UE5-hP-VAs"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EGx-iY-pmK" userLabel="TagStackView">
+                                                <rect key="frame" x="22" y="156.66666666666666" width="346" height="98"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="TRW-Ll-m1b">
+                                                        <rect key="frame" x="0.0" y="0.0" width="243" height="26"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gl1-qY-M9c">
+                                                                <rect key="frame" x="0.0" y="0.0" width="54" height="26"/>
+                                                                <color key="backgroundColor">
+                                                                    <string key="name">
+22.09.14-light-gray</string>
+                                                                </color>
+                                                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="빡코딩">
+                                                                    <color key="titleColor">
+                                                                        <string key="name">
+22.09.14-black</string>
+                                                                    </color>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tagKeyWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sd6-wS-bII"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6p-Bb-vCP">
+                                                                <rect key="frame" x="63" y="0.0" width="54" height="26"/>
+                                                                <color key="backgroundColor">
+                                                                    <string key="name">
+22.09.14-light-gray</string>
+                                                                </color>
+                                                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="빡코딩">
+                                                                    <color key="titleColor">
+                                                                        <string key="name">
+22.09.14-black</string>
+                                                                    </color>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tagKeyWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IoS-b3-Shd"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C00-Bn-ayb">
+                                                                <rect key="frame" x="126" y="0.0" width="54" height="26"/>
+                                                                <color key="backgroundColor">
+                                                                    <string key="name">
+22.09.14-light-gray</string>
+                                                                </color>
+                                                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="빡코딩">
+                                                                    <color key="titleColor">
+                                                                        <string key="name">
+22.09.14-black</string>
+                                                                    </color>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tagKeyWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKp-p8-mNw"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPF-T6-iHs">
+                                                                <rect key="frame" x="189" y="0.0" width="54" height="26"/>
+                                                                <color key="backgroundColor">
+                                                                    <string key="name">
+22.09.14-light-gray</string>
+                                                                </color>
+                                                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="빡코딩">
+                                                                    <color key="titleColor">
+                                                                        <string key="name">
+22.09.14-black</string>
+                                                                    </color>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tagKeyWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lql-Xa-d8L"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Fgf-Tm-S2U">
+                                                        <rect key="frame" x="0.0" y="36" width="253" height="26"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hs9-YX-p8m">
+                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="26"/>
+                                                                <color key="backgroundColor">
+                                                                    <string key="name">
+22.09.14-light-gray</string>
+                                                                </color>
+                                                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="바지">
+                                                                    <color key="titleColor">
+                                                                        <string key="name">
+22.09.14-black</string>
+                                                                    </color>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tagKeyWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4sj-Ms-zcV"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCI-em-n3T">
+                                                                <rect key="frame" x="55" y="0.0" width="54" height="26"/>
+                                                                <color key="backgroundColor">
+                                                                    <string key="name">
+22.09.14-light-gray</string>
+                                                                </color>
+                                                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="하객룩">
+                                                                    <color key="titleColor">
+                                                                        <string key="name">
+22.09.14-black</string>
+                                                                    </color>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tagKeyWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xC7-eF-Gcf"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUD-TB-Mm5">
+                                                                <rect key="frame" x="121" y="0.0" width="54" height="26"/>
+                                                                <color key="backgroundColor">
+                                                                    <string key="name">
+22.09.14-light-gray</string>
+                                                                </color>
+                                                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="스커트">
+                                                                    <color key="titleColor">
+                                                                        <string key="name">
+22.09.14-black</string>
+                                                                    </color>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tagKeyWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V2M-35-PQO"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elj-xs-Ger">
+                                                                <rect key="frame" x="187" y="0.0" width="66" height="26"/>
+                                                                <color key="backgroundColor">
+                                                                    <string key="name">
+22.09.14-light-gray</string>
+                                                                </color>
+                                                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="점프슈트">
+                                                                    <color key="titleColor">
+                                                                        <string key="name">
+22.09.14-black</string>
+                                                                    </color>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tagKeyWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jZz-3Y-GUa"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="9vz-bv-3of">
+                                                        <rect key="frame" x="0.0" y="72.000000000000028" width="243" height="26"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdv-8O-Fut">
+                                                                <rect key="frame" x="0.0" y="0.0" width="54" height="26"/>
+                                                                <color key="backgroundColor">
+                                                                    <string key="name">
+22.09.14-light-gray</string>
+                                                                </color>
+                                                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="빡코딩">
+                                                                    <color key="titleColor">
+                                                                        <string key="name">
+22.09.14-black</string>
+                                                                    </color>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tagKeyWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWX-Wt-Db6"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg4-Kc-qD2">
+                                                                <rect key="frame" x="63" y="0.0" width="54" height="26"/>
+                                                                <color key="backgroundColor">
+                                                                    <string key="name">
+22.09.14-light-gray</string>
+                                                                </color>
+                                                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="빡코딩">
+                                                                    <color key="titleColor">
+                                                                        <string key="name">
+22.09.14-black</string>
+                                                                    </color>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tagKeyWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HwZ-R3-foJ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZq-8H-Bjo">
+                                                                <rect key="frame" x="126" y="0.0" width="54" height="26"/>
+                                                                <color key="backgroundColor">
+                                                                    <string key="name">
+22.09.14-light-gray</string>
+                                                                </color>
+                                                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="빡코딩">
+                                                                    <color key="titleColor">
+                                                                        <string key="name">
+22.09.14-black</string>
+                                                                    </color>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tagKeyWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3sR-KZ-3eB"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVL-Lk-TcP">
+                                                                <rect key="frame" x="189" y="0.0" width="54" height="26"/>
+                                                                <color key="backgroundColor">
+                                                                    <string key="name">
+22.09.14-light-gray</string>
+                                                                </color>
+                                                                <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="12"/>
+                                                                <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="빡코딩">
+                                                                    <color key="titleColor">
+                                                                        <string key="name">
+22.09.14-black</string>
+                                                                    </color>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="tagKeyWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfJ-KH-2xR"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="kGM-hX-zlv" secondAttribute="trailing" constant="22" id="0pc-eI-1FA"/>
+                                            <constraint firstItem="kGM-hX-zlv" firstAttribute="trailing" secondItem="rwE-FW-Q2h" secondAttribute="trailing" id="7T5-1v-HtU"/>
+                                            <constraint firstItem="JZN-uY-31d" firstAttribute="top" secondItem="j86-bm-2Nd" secondAttribute="bottom" constant="16" id="A7q-I1-3nl"/>
+                                            <constraint firstItem="kGM-hX-zlv" firstAttribute="leading" secondItem="rwE-FW-Q2h" secondAttribute="leading" id="GOv-ti-c0h"/>
+                                            <constraint firstAttribute="trailing" secondItem="rwE-FW-Q2h" secondAttribute="trailing" constant="22" id="ZdS-Ri-gXT"/>
+                                            <constraint firstItem="rwE-FW-Q2h" firstAttribute="leading" secondItem="k2s-HI-d2w" secondAttribute="leading" constant="22" id="cIX-cy-KXu"/>
+                                            <constraint firstItem="j86-bm-2Nd" firstAttribute="top" secondItem="kGM-hX-zlv" secondAttribute="bottom" id="ej9-Ai-oUe"/>
+                                            <constraint firstItem="JZN-uY-31d" firstAttribute="trailing" secondItem="rwE-FW-Q2h" secondAttribute="trailing" id="fNb-D4-FOL"/>
+                                            <constraint firstItem="j86-bm-2Nd" firstAttribute="centerX" secondItem="k2s-HI-d2w" secondAttribute="centerX" id="hXT-Pz-MI9"/>
+                                            <constraint firstItem="EGx-iY-pmK" firstAttribute="leading" secondItem="JZN-uY-31d" secondAttribute="leading" id="jZk-Mj-MwI"/>
+                                            <constraint firstItem="j86-bm-2Nd" firstAttribute="leading" secondItem="k2s-HI-d2w" secondAttribute="leading" id="nO2-Z8-Yjj"/>
+                                            <constraint firstItem="JZN-uY-31d" firstAttribute="leading" secondItem="rwE-FW-Q2h" secondAttribute="leading" id="p1m-te-MMM"/>
+                                            <constraint firstItem="kGM-hX-zlv" firstAttribute="top" secondItem="rwE-FW-Q2h" secondAttribute="bottom" constant="8" symbolic="YES" id="rgh-Ia-IlB"/>
+                                            <constraint firstItem="EGx-iY-pmK" firstAttribute="top" secondItem="JZN-uY-31d" secondAttribute="bottom" constant="20" id="v2s-Cn-bk4"/>
+                                            <constraint firstItem="EGx-iY-pmK" firstAttribute="trailing" secondItem="JZN-uY-31d" secondAttribute="trailing" id="wO5-gM-AIq"/>
+                                            <constraint firstItem="rwE-FW-Q2h" firstAttribute="top" secondItem="k2s-HI-d2w" secondAttribute="top" constant="20" id="xc3-IJ-UvN"/>
+                                            <constraint firstItem="kGM-hX-zlv" firstAttribute="leading" secondItem="k2s-HI-d2w" secondAttribute="leading" constant="22" id="ycd-5N-ZcQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="k2s-HI-d2w" firstAttribute="leading" secondItem="7yW-bN-VRh" secondAttribute="leading" id="8sC-0V-b8j"/>
+                                    <constraint firstItem="k2s-HI-d2w" firstAttribute="top" secondItem="7yW-bN-VRh" secondAttribute="top" id="Fe3-El-Tvn"/>
+                                    <constraint firstItem="k2s-HI-d2w" firstAttribute="trailing" secondItem="7yW-bN-VRh" secondAttribute="trailing" id="aBU-HL-lr0"/>
+                                    <constraint firstItem="k2s-HI-d2w" firstAttribute="bottom" secondItem="7yW-bN-VRh" secondAttribute="bottom" id="iml-Nc-6KU"/>
+                                    <constraint firstItem="k2s-HI-d2w" firstAttribute="leading" secondItem="xvp-1s-A3i" secondAttribute="leading" id="jQj-e4-UgX"/>
+                                    <constraint firstAttribute="trailing" secondItem="k2s-HI-d2w" secondAttribute="trailing" id="kzB-nf-etI"/>
+                                    <constraint firstItem="TeR-42-jC3" firstAttribute="bottom" secondItem="k2s-HI-d2w" secondAttribute="bottom" id="lkI-pX-naj"/>
+                                    <constraint firstItem="k2s-HI-d2w" firstAttribute="width" secondItem="TeR-42-jC3" secondAttribute="width" id="qqQ-q1-Tfi"/>
+                                    <constraint firstItem="k2s-HI-d2w" firstAttribute="top" secondItem="TeR-42-jC3" secondAttribute="top" id="z4h-19-NvF"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="7yW-bN-VRh"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="TeR-42-jC3"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor">
+                            <string key="name">
+22.09.14-light-gray</string>
+                        </color>
+                        <constraints>
+                            <constraint firstItem="xvp-1s-A3i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3HT-aH-fL1"/>
+                            <constraint firstAttribute="bottom" secondItem="xvp-1s-A3i" secondAttribute="bottom" id="b8F-PB-Smr"/>
+                            <constraint firstAttribute="trailing" secondItem="xvp-1s-A3i" secondAttribute="trailing" id="fkj-Tr-MA1"/>
+                            <constraint firstItem="xvp-1s-A3i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ldE-ly-zNZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="검색" id="DOS-tJ-9f7"/>
+                    <size key="freeformSize" width="390" height="1200"/>
+                    <connections>
+                        <outlet property="SearchStackView" destination="rwE-FW-Q2h" id="4zs-P6-Ezv"/>
+                        <outlet property="recentSearchesStackView" destination="kGM-hX-zlv" id="qeO-HI-06g"/>
+                        <outlet property="recommendedLabel" destination="JZN-uY-31d" id="bFF-yT-GMF"/>
+                        <outlet property="recommendedTagStackView" destination="EGx-iY-pmK" id="w4j-sj-nR7"/>
+                        <outlet property="scrollView" destination="xvp-1s-A3i" id="CYN-qP-K3P"/>
+                        <outlet property="searchButton" destination="m9f-h4-9vT" id="JVN-LO-irI"/>
+                        <outlet property="searchStackViewHeight" destination="UE5-hP-VAs" id="Fwp-UV-KKh"/>
+                        <outlet property="searchTextField" destination="ZaR-4D-3hV" id="S9B-Y8-wgC"/>
+                        <outlet property="searchTextFieldToSearchButtonConstraint" destination="dHJ-UK-XNR" id="xJX-UZ-siZ"/>
+                        <outlet property="tableView" destination="j86-bm-2Nd" id="qHo-wQ-9ns"/>
+                        <outlet property="tableViewHeight" destination="fpL-CS-4PV" id="9SY-UO-Ko0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.61538461538464" y="-45.497630331753555"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CWM-dk-1fc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="re8-ri-0To" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pLk-ir-8ue">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor">
+                            <string key="name">
+22.09.14-light-gray</string>
+                        </color>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NS1-NI-DM2" kind="relationship" relationship="rootViewController" id="qmw-Pg-qij"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Obk-vw-Iay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-872" y="-45"/>
+        </scene>
+        <!--Search MainVC-->
+        <scene sceneID="YaE-1H-Lcu">
+            <objects>
+                <viewController storyboardIdentifier="SearchMainVC" id="NS1-NI-DM2" customClass="SearchMainVC" customModule="Portfolio01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vpf-pz-R6G">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xte-Ge-DVk">
+                                <rect key="frame" x="168" y="404.66666666666669" width="54" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="이동"/>
+                                <connections>
+                                    <action selector="moveMainVC:" destination="NS1-NI-DM2" eventType="touchUpInside" id="ezv-gF-bBg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qDv-kl-apF"/>
+                        <color key="backgroundColor">
+                            <string key="name">
+22.09.14-light-gray</string>
+                        </color>
+                        <constraints>
+                            <constraint firstItem="Xte-Ge-DVk" firstAttribute="centerY" secondItem="vpf-pz-R6G" secondAttribute="centerY" id="gBG-bd-h8r"/>
+                            <constraint firstItem="Xte-Ge-DVk" firstAttribute="centerX" secondItem="vpf-pz-R6G" secondAttribute="centerX" id="z0E-Jy-kEb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CZs-x4-SOS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="02s-YL-4n0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="-45"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Delete" width="24" height="24"/>
+        <image name="Search" width="44" height="44"/>
+        <namedColor>
+            <string key="name">
+22.09.14-black</string>
+            <color red="0.16862745098039217" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor>
+            <string key="name">
+22.09.14-gray300</string>
+            <color red="0.75686274509803919" green="0.75686274509803919" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor>
+            <string key="name">
+22.09.14-light-gray</string>
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

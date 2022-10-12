@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryHeader" id="Tf6-Md-JON" customClass="CategoryHeader" customModule="Portfolio01">
+            <rect key="frame" x="0.0" y="0.0" width="559" height="193"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbZ-ce-HOb">
+                    <rect key="frame" x="0.0" y="0.0" width="559" height="193"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="NNd-Vh-EBL"/>
+            <constraints>
+                <constraint firstAttribute="top" secondItem="rbZ-ce-HOb" secondAttribute="top" id="9Fo-9y-zHO"/>
+                <constraint firstItem="NNd-Vh-EBL" firstAttribute="trailing" secondItem="rbZ-ce-HOb" secondAttribute="trailing" id="BgI-c8-Nf8"/>
+                <constraint firstItem="rbZ-ce-HOb" firstAttribute="bottom" secondItem="Tf6-Md-JON" secondAttribute="bottom" id="rzN-pZ-Sb9"/>
+                <constraint firstItem="rbZ-ce-HOb" firstAttribute="leading" secondItem="NNd-Vh-EBL" secondAttribute="leading" id="zW8-J7-rFv"/>
+            </constraints>
+            <point key="canvasLocation" x="543.84615384615381" y="56.516587677725113"/>
+        </collectionReusableView>
+    </objects>
+</document>

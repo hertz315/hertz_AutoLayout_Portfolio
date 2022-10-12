@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumGothic-Regular.ttf">
+            <string>NanumGothic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCVC" id="oRj-UU-4jF" customClass="CategoryCVC" customModule="Portfolio01">
+            <rect key="frame" x="0.0" y="0.0" width="196" height="256"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="um8-zz-hep">
+                <rect key="frame" x="0.0" y="0.0" width="196" height="256"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WVR-PF-XY5">
+                        <rect key="frame" x="0.0" y="0.0" width="196" height="256"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5UX-93-H8M">
+                                <rect key="frame" x="0.0" y="0.0" width="196" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="22k-Vd-hR3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbN-f5-wP1">
+                                <rect key="frame" x="0.0" y="68" width="196" height="188"/>
+                                <fontDescription key="fontDescription" name="NanumGothic" family="NanumGothic" pointSize="12"/>
+                                <color key="textColor">
+                                    <string key="name">
+22.09.14-dark-gray</string>
+                                </color>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WVR-PF-XY5" firstAttribute="top" secondItem="um8-zz-hep" secondAttribute="top" id="QGe-m5-hQR"/>
+                    <constraint firstItem="WVR-PF-XY5" firstAttribute="leading" secondItem="um8-zz-hep" secondAttribute="leading" id="Thm-7p-3le"/>
+                    <constraint firstAttribute="bottom" secondItem="WVR-PF-XY5" secondAttribute="bottom" id="aH9-oE-e6O"/>
+                    <constraint firstAttribute="trailing" secondItem="WVR-PF-XY5" secondAttribute="trailing" id="gYd-Wk-fEm"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="196" height="256"/>
+            <connections>
+                <outlet property="categoryImage" destination="5UX-93-H8M" id="waD-6U-aW2"/>
+                <outlet property="categoryLabel" destination="gbN-f5-wP1" id="GUM-sM-tPp"/>
+            </connections>
+            <point key="canvasLocation" x="289.23076923076923" y="71.800947867298575"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor>
+            <string key="name">
+22.09.14-dark-gray</string>
+            <color red="0.42352941176470588" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

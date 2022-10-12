@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumGothic-Bold.ttf">
+            <string>NanumGothicBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DetailCategoryHeader" id="cPI-Xc-cfC" customClass="DetailCategoryFooter" customModule="Portfolio01">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWP-Uu-9IK">
+                    <rect key="frame" x="0.0" y="0.0" width="466" height="135"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 가장 뜨거운 빡코빡코 추천🔥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0A-cS-RC2">
+                            <rect key="frame" x="16" y="59.333333333333336" width="192" height="16.333333333333336"/>
+                            <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m0A-cS-RC2" secondAttribute="trailing" constant="16" id="583-zz-T2e"/>
+                        <constraint firstItem="m0A-cS-RC2" firstAttribute="leading" secondItem="LWP-Uu-9IK" secondAttribute="leading" constant="16" id="5bs-C3-dtH"/>
+                        <constraint firstItem="m0A-cS-RC2" firstAttribute="centerY" secondItem="LWP-Uu-9IK" secondAttribute="centerY" id="8th-NT-QeK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="val-XK-rgL"/>
+            <constraints>
+                <constraint firstItem="LWP-Uu-9IK" firstAttribute="leading" secondItem="val-XK-rgL" secondAttribute="leading" id="8pc-Z6-k40"/>
+                <constraint firstAttribute="top" secondItem="LWP-Uu-9IK" secondAttribute="top" id="JnA-Vt-Uxg"/>
+                <constraint firstItem="LWP-Uu-9IK" firstAttribute="bottom" secondItem="cPI-Xc-cfC" secondAttribute="bottom" id="cDN-Q4-bSo"/>
+                <constraint firstItem="val-XK-rgL" firstAttribute="trailing" secondItem="LWP-Uu-9IK" secondAttribute="trailing" id="loJ-EI-cS8"/>
+            </constraints>
+            <point key="canvasLocation" x="95.384615384615387" y="58.649289099526065"/>
+        </collectionReusableView>
+    </objects>
+</document>

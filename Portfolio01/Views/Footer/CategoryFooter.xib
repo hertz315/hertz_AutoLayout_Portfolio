@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryFooter" id="1dX-3r-6YM" customClass="CategoryFooter" customModule="Portfolio01">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8e1-cX-ntu">
+                    <rect key="frame" x="0.0" y="0.0" width="415" height="70"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCt-Kb-6t1">
+                            <rect key="frame" x="16" y="34.666666666666664" width="383" height="1"/>
+                            <color key="backgroundColor">
+                                <string key="name">
+9.20.lightgray100</string>
+                            </color>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="mmV-YY-sui"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="jCt-Kb-6t1" firstAttribute="centerY" secondItem="8e1-cX-ntu" secondAttribute="centerY" id="9dr-x5-UNz"/>
+                        <constraint firstAttribute="trailing" secondItem="jCt-Kb-6t1" secondAttribute="trailing" constant="16" id="Na2-dK-xAO"/>
+                        <constraint firstItem="jCt-Kb-6t1" firstAttribute="leading" secondItem="8e1-cX-ntu" secondAttribute="leading" constant="16" id="grg-d6-9fR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="w8k-KZ-tTd"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="w8k-KZ-tTd" firstAttribute="trailing" secondItem="8e1-cX-ntu" secondAttribute="trailing" id="Rd9-E8-uhj"/>
+                <constraint firstItem="8e1-cX-ntu" firstAttribute="leading" secondItem="w8k-KZ-tTd" secondAttribute="leading" id="Z1a-0v-I2N"/>
+                <constraint firstItem="8e1-cX-ntu" firstAttribute="bottom" secondItem="1dX-3r-6YM" secondAttribute="bottom" id="teV-A6-WdC"/>
+                <constraint firstAttribute="top" secondItem="8e1-cX-ntu" secondAttribute="top" id="uNT-r1-9fq"/>
+            </constraints>
+            <point key="canvasLocation" x="219.23076923076923" y="-7.1090047393364921"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor>
+            <string key="name">
+9.20.lightgray100</string>
+            <color red="0.85490196078431369" green="0.85882352941176465" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
