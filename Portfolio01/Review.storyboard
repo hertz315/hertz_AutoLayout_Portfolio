@@ -20,7 +20,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--ReviewVC-->
+        <!--리뷰-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ReviewVC" id="BYZ-38-t0r" customClass="ReviewVC" customModule="Portfolio01" sceneMemberID="viewController">
@@ -276,6 +276,8 @@
                             <constraint firstItem="edb-Ly-VGF" firstAttribute="top" secondItem="nSS-0D-5Uz" secondAttribute="bottom" id="zWB-MT-3sV"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="리뷰" image="ellipsis.message" catalog="system" selectedImage="ellipsis.message.fill" id="kfi-H5-UTB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="375" height="1639"/>
                     <connections>
                         <outlet property="averagyRatingLabel" destination="9d6-Eh-KOB" id="p6a-z3-LTr"/>
@@ -298,20 +300,22 @@
         <image name="Ellipse 16" width="100" height="100"/>
         <image name="Star" width="20.5" height="19.5"/>
         <image name="Star 1" width="20.5" height="19.5"/>
+        <image name="ellipsis.message" catalog="system" width="128" height="116"/>
+        <image name="ellipsis.message.fill" catalog="system" width="128" height="114"/>
         <namedColor>
             <string key="name">
 22.09.14-black</string>
-            <color red="0.16862745098039217" green="0.16862745098039217" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.16899999976158142" green="0.16899999976158142" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor>
             <string key="name">
 22.09.14-dark-gray</string>
-            <color red="0.42352941176470588" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.42399999499320984" green="0.3919999897480011" blue="0.3919999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor>
             <string key="name">
 9.20.lightgray100</string>
-            <color red="0.85490196078431369" green="0.85882352941176465" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.85500001907348633" green="0.85900002717971802" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor>
             <string key="name">

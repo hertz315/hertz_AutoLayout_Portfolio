@@ -95,8 +95,8 @@ extension DetailVC: UITableViewDelegate {
             self.navigationController?.pushViewController(adverticeVC, animated: true)
         case 2:
             print("🍏")
-            let salesVC = SalesVC()
-            self.present(salesVC, animated: true)
+            let salesVC = UIStoryboard(name: "SalesVC", bundle: nil).instantiateViewController(withIdentifier: SalesVC.storyboardID)
+            self.navigationController?.pushViewController(salesVC, animated: true)
         default:
             break
         }

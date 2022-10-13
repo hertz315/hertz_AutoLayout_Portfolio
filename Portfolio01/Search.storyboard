@@ -513,7 +513,7 @@
             </objects>
             <point key="canvasLocation" x="-872" y="-45"/>
         </scene>
-        <!--Search MainVC-->
+        <!--검색-->
         <scene sceneID="YaE-1H-Lcu">
             <objects>
                 <viewController storyboardIdentifier="SearchMainVC" id="NS1-NI-DM2" customClass="SearchMainVC" customModule="Portfolio01" customModuleProvider="target" sceneMemberID="viewController">
@@ -540,7 +540,9 @@
                             <constraint firstItem="Xte-Ge-DVk" firstAttribute="centerX" secondItem="vpf-pz-R6G" secondAttribute="centerX" id="z0E-Jy-kEb"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="검색" image="magnifyingglass.circle" catalog="system" selectedImage="magnifyingglass.circle.fill" id="ib1-nB-qYs"/>
                     <navigationItem key="navigationItem" id="CZs-x4-SOS"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="02s-YL-4n0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -550,6 +552,8 @@
     <resources>
         <image name="Delete" width="24" height="24"/>
         <image name="Search" width="44" height="44"/>
+        <image name="magnifyingglass.circle" catalog="system" width="128" height="123"/>
+        <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="123"/>
         <namedColor>
             <string key="name">
 22.09.14-black</string>

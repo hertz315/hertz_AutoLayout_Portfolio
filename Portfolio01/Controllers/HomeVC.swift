@@ -72,7 +72,7 @@ final class HomeVC: UIViewController {
     
     /// 컬렉션뷰 데이터 관련
     fileprivate func setupCollectionViewData() {
-        let categoryModels: [BaseModel] = Category.allCases.map{$0.getCategoryModel()}
+        let categoryModels: [BaseModel] = Category.allCases.map{ make in make.getCategoryModel()}
         let recommendedList: [BaseModel] = DetailCategory.getRecommandedCategories()
         let allList: [BaseModel] = DetailCategory.getCategoryAll()
         

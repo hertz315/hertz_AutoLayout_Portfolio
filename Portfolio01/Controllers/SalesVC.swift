@@ -6,20 +6,17 @@
 //
 
 import UIKit
+import SafariServices
 
 class SalesVC: UIViewController {
-
+    
+    static let storyboardID = "SalesVC"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupWebView()
-        // Do any additional setup after loading the view.
+        guard let url = URL(string: "https://zeddios.tistory.com") else { return }
+        let safariViewController = SFSafariViewController(url: url)
+        present(safariViewController, animated: true, completion: nil)
     }
-
-    fileprivate func setupWebView() {
-        guard let youtubeUrl = URL(string: "https://www.youtube.com/c/%EA%B0%9C%EB%B0%9C%ED%95%98%EB%8A%94%EC%A0%95%EB%8C%80%EB%A6%AC")   else { return }
-        guard UIApplication.shared.canOpenURL(youtubeUrl) else { return }
-        UIApplication.shared.open(youtubeUrl, options: [:], completionHandler: nil)
-    }
-
 }
 

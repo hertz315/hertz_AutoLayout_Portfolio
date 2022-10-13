@@ -86,7 +86,6 @@ class CustomTextField: UIView {
         let textField = UITextField()
         textField.backgroundColor = .clear
         textField.placeholder = "키워드와 #태그 모두 검색할 수 있어요."
-        textField.attributedPlaceholder = NSAttributedString(string: "키워드와 #태그 모두 검색할 수 있어요.", attributes: [NSAttributedString.Key.foregroundColor : UIColor.black, NSAttributedString.Key.font : UIFont(name: "NanumGothic", size: 14) as Any])
         textField.tintColor = .black
         return textField
     }()

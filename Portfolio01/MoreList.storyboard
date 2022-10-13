@@ -12,7 +12,7 @@
         <!--더보기-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MoreListVC" id="BYZ-38-t0r" customClass="MoreListVC" customModule="Dailly_Challenge_MoreList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoreListVC" id="BYZ-38-t0r" customClass="MoreListVC" customModule="Portfolio01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,9 @@
                             <constraint firstAttribute="bottom" secondItem="V0n-v1-nXU" secondAttribute="bottom" id="USn-cz-igs"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="문의" image="list.bullet.rectangle" catalog="system" selectedImage="list.bullet.rectangle.fill" id="unV-EI-KD6"/>
                     <navigationItem key="navigationItem" title="더보기" id="FOe-67-x4E"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="V0n-v1-nXU" id="gQn-c3-yVV"/>
                     </connections>
@@ -61,6 +63,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
+        <image name="list.bullet.rectangle.fill" catalog="system" width="128" height="93"/>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

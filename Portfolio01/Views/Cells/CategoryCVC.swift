@@ -13,7 +13,6 @@ class CategoryCVC: UICollectionViewCell {
     static let nibName = "CategoryCVC"
     
     // MARK: - @IBOulet
-    
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryLabel: UILabel!
     
@@ -44,7 +43,7 @@ class CategoryCVC: UICollectionViewCell {
     fileprivate func applySelectedTextColor(_ isSelected: Bool) {
         if isSelected {
             categoryLabel.textColor = .red
-            categoryLabel.font = UIFont(name: "NanumGothic", size: 11)
+            categoryLabel.font = UIFont(name: "NanumGothic", size: 12)
         } else {
             categoryLabel.textColor = .black
             categoryLabel.font = UIFont(name: "NanumGothic", size: 10)

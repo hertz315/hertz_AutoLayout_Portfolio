@@ -14,6 +14,11 @@ class AdverticeVC: UIViewController {
     
     let webView = WKWebView()
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        webView.frame = view.safeAreaLayoutGuide.layoutFrame
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupWebView()
@@ -25,10 +30,7 @@ class AdverticeVC: UIViewController {
         webView.load(URLRequest(url: url))
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        webView.frame = view.safeAreaLayoutGuide.layoutFrame
-    }
+  
 
 }
 

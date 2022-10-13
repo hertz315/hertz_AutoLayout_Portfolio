@@ -74,6 +74,10 @@
 		E0F2557A28F797BA00A30E98 /* MoreListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F2555B28F6F5CF00A30E98 /* MoreListTVC.xib */; };
 		E0F2557B28F797BE00A30E98 /* DetailTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F2555E28F6F5EB00A30E98 /* DetailTVC.xib */; };
 		E0F2557C28F7982C00A30E98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0F254DB28F6E32100A30E98 /* Assets.xcassets */; };
+		E0F2557D28F84D8000A30E98 /* NanumGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0F2552B28F6EB8000A30E98 /* NanumGothic-Regular.ttf */; };
+		E0F2557E28F84D8300A30E98 /* NanumGothic-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0F2552A28F6EB8000A30E98 /* NanumGothic-ExtraBold.ttf */; };
+		E0F2557F28F84D8700A30E98 /* NanumGothic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0F2552C28F6EB8000A30E98 /* NanumGothic-Bold.ttf */; };
+		E0F2558128F8535500A30E98 /* SalesVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F2558028F8535500A30E98 /* SalesVC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,6 +153,7 @@
 		E0F2555F28F6F5FC00A30E98 /* DetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTVC.swift; sourceTree = "<group>"; };
 		E0F2556128F6F63700A30E98 /* CustomerServiceCenterSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerServiceCenterSectionModel.swift; sourceTree = "<group>"; };
 		E0F2556328F6F65700A30E98 /* MoreListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreListModel.swift; sourceTree = "<group>"; };
+		E0F2558028F8535500A30E98 /* SalesVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SalesVC.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +205,7 @@
 				E0F2555828F6F58700A30E98 /* DetailVC.storyboard */,
 				E0F2555928F6F58F00A30E98 /* QuestionsVC.storyboard */,
 				E0F2555A28F6F59400A30E98 /* AdverticeVC.storyboard */,
+				E0F2558028F8535500A30E98 /* SalesVC.storyboard */,
 				E0F254DB28F6E32100A30E98 /* Assets.xcassets */,
 				E0F254DD28F6E32100A30E98 /* LaunchScreen.storyboard */,
 				E0F254E028F6E32100A30E98 /* Info.plist */,
@@ -401,6 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F2557E28F84D8300A30E98 /* NanumGothic-ExtraBold.ttf in Resources */,
 				E0F2557228F7979600A30E98 /* CategoryHeader.xib in Resources */,
 				E0F2557728F797AE00A30E98 /* RecommendedcategoryCVC.xib in Resources */,
 				E0F2556F28F7978A00A30E98 /* CategoryFooter.xib in Resources */,
@@ -408,10 +415,13 @@
 				E0F2556C28F7964B00A30E98 /* QuestionsVC.storyboard in Resources */,
 				E0F2556A28F7964300A30E98 /* MoreList.storyboard in Resources */,
 				E0F2556D28F7964E00A30E98 /* AdverticeVC.storyboard in Resources */,
+				E0F2557F28F84D8700A30E98 /* NanumGothic-Bold.ttf in Resources */,
 				E0F2557128F7979200A30E98 /* ReviewTVCH.xib in Resources */,
 				E0F2557828F797B200A30E98 /* VerticalCategoryCVC.xib in Resources */,
 				E0F2557628F797A600A30E98 /* ReviewTVC.xib in Resources */,
 				E0F2557A28F797BA00A30E98 /* MoreListTVC.xib in Resources */,
+				E0F2557D28F84D8000A30E98 /* NanumGothic-Regular.ttf in Resources */,
+				E0F2558128F8535500A30E98 /* SalesVC.storyboard in Resources */,
 				E0F2556928F7963D00A30E98 /* Review.storyboard in Resources */,
 				E0F2556528F795D700A30E98 /* Main.storyboard in Resources */,
 				E0F2557928F797B600A30E98 /* TVCell.xib in Resources */,

@@ -23,16 +23,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WVR-PF-XY5">
-                        <rect key="frame" x="0.0" y="0.0" width="196" height="256"/>
+                        <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="256"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5UX-93-H8M">
-                                <rect key="frame" x="0.0" y="0.0" width="196" height="60"/>
+                                <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="22k-Vd-hR3"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbN-f5-wP1">
-                                <rect key="frame" x="0.0" y="68" width="196" height="188"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labeldfasdfasdf" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbN-f5-wP1">
+                                <rect key="frame" x="0.0" y="68" width="87.333333333333329" height="188"/>
                                 <fontDescription key="fontDescription" name="NanumGothic" family="NanumGothic" pointSize="12"/>
                                 <color key="textColor">
                                     <string key="name">
@@ -63,7 +63,7 @@
         <namedColor>
             <string key="name">
 22.09.14-dark-gray</string>
-            <color red="0.42352941176470588" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.42399999499320984" green="0.3919999897480011" blue="0.3919999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
