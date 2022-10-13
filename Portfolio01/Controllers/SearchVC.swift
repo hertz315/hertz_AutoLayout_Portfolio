@@ -195,7 +195,7 @@ class SearchVC: UIViewController {
     
     /// 스크롤뷰 에서 바깥에 화면 터치시 키보드 내리는 함수
     func setUpKeyboardDown() {
-        let singleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(MyTapMethod))
+        let singleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(MyTapMethod(_:)))
         singleTapGestureRecognizer.numberOfTapsRequired = 1
         singleTapGestureRecognizer.isEnabled = true
         singleTapGestureRecognizer.cancelsTouchesInView = false
@@ -204,7 +204,7 @@ class SearchVC: UIViewController {
     
     
     ///  스크롤뷰 에서 바깥에 화면 터치시 키보드 내리는 함수
-    @objc func MyTapMethod(sender: UITapGestureRecognizer) { self.view.endEditing(true)
+    @objc func MyTapMethod(_ sender: UITapGestureRecognizer) { self.view.endEditing(true)
     }
     
     

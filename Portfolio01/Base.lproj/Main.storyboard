@@ -27,50 +27,50 @@
             </objects>
             <point key="canvasLocation" x="-559" y="-63"/>
         </scene>
-        <!--HomeVC-->
+        <!--Home-->
         <scene sceneID="qF8-0G-QAu">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HomeVC" storyboardName="Home" referencedIdentifier="HomeVC" id="lxF-lZ-Nrs" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="HomeVC" storyboardName="Home" id="lxF-lZ-Nrs" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="gEy-fz-Yc4"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N2l-eF-Zd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="557" y="-296"/>
         </scene>
-        <!--SearchMainVC-->
+        <!--Search-->
         <scene sceneID="cmP-59-jzJ">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="SearchMainVC" storyboardName="Search" referencedIdentifier="SearchMainVC" id="Q0M-wu-tsD" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="SearchMainVC" storyboardName="Search" id="Q0M-wu-tsD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="9ti-bV-QxM"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Sd-Q5-NdN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="585" y="-204"/>
         </scene>
-        <!--ReviewVC-->
+        <!--Review-->
         <scene sceneID="v4J-UK-igb">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="ReviewVC" storyboardName="Review" referencedIdentifier="ReviewVC" id="1G3-me-hrM" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="ReviewVC" storyboardName="Review" id="1G3-me-hrM" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="hAw-OO-47e"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y3x-4R-5i7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="564" y="-68"/>
         </scene>
-        <!--DetailSearchVC-->
+        <!--DetailSearch-->
         <scene sceneID="FqP-RP-ggs">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="DetailSearchVC" storyboardName="DetailSearch" referencedIdentifier="DetailSearchVC" id="CIq-Lc-lYw" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="DetailSearchVC" storyboardName="DetailSearch" id="CIq-Lc-lYw" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="M0T-xp-WDU"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiY-tr-Q8g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="589" y="31"/>
         </scene>
-        <!--MoreListVC-->
+        <!--MoreList-->
         <scene sceneID="Bjg-ZX-KDT">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MoreListVC" storyboardName="MoreList" referencedIdentifier="MoreListVC" id="3QC-tr-Cno" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="MoreListVC" storyboardName="MoreList" id="3QC-tr-Cno" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="DwS-xR-PlW"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oM-E7-w8i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

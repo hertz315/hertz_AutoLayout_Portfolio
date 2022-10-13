@@ -86,7 +86,7 @@ class CustomTextField: UIView {
         let textField = UITextField()
         textField.backgroundColor = .clear
         textField.placeholder = "키워드와 #태그 모두 검색할 수 있어요."
-        textField.attributedPlaceholder = NSAttributedString(string: "키워드와 #태그 모두 검색할 수 있어요.", attributes: [NSAttributedString.Key.foregroundColor : UIColor.black, NSAttributedString.Key.font : UIFont(name: "NanumGothic", size: 14)!])
+        textField.attributedPlaceholder = NSAttributedString(string: "키워드와 #태그 모두 검색할 수 있어요.", attributes: [NSAttributedString.Key.foregroundColor : UIColor.black, NSAttributedString.Key.font : UIFont(name: "NanumGothic", size: 14) as Any])
         textField.tintColor = .black
         return textField
     }()
@@ -141,7 +141,7 @@ extension CustomTextField {
     }
     /// 텍스트필드 버튼이 눌리면 동작하는 함수
     @objc func didTapTextFieldButton() {
-        
+        print(#fileID, #function, #line, "didTapTextFieldButton - Tapped")
     }
     
 }

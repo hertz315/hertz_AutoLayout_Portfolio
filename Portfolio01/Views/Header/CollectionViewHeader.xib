@@ -50,7 +50,7 @@
                                                     </color>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropDown" translatesAutoresizingMaskIntoConstraints="NO" id="3Az-BQ-JZu">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_down_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="3Az-BQ-JZu">
                                                     <rect key="frame" x="326.33333333333337" y="0.0" width="20" height="20"/>
                                                     <color key="tintColor">
                                                         <string key="name">
@@ -115,7 +115,7 @@
         </collectionReusableView>
     </objects>
     <resources>
-        <image name="dropDown" width="12" height="6.6666665077209473"/>
+        <image name="ic_down_arrow" width="12" height="6.6666665077209473"/>
         <namedColor>
             <string key="name">
 9.5.darkgray</string>
